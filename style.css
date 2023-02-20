@@ -1,0 +1,131 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Oswald", sans-serif;
+}
+
+
+.container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    flex-direction: column;
+    gap: 20px;
+}
+
+h1{
+    color: #fff;
+    font-size: 33px;
+}
+
+#settings{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    font-size: 18px;
+    background-color: #A7CCED;
+    font-weight: 700;
+    padding: 10px 20px;
+    gap: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #000;
+    transition: box-shadow .2s ease-in-out;
+}
+
+#settings:hover{
+    box-shadow: 1px 0px 10px 3px cyan;
+}
+
+#settings img{
+    height: 24px;
+    width: auto;
+}
+
+.layout{
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: fit-content;
+    padding: 20px;
+    background-color: #304D6D;
+    border-radius: 25px;
+    scale: 0;
+    transition: scale .3s ease-in-out;
+}
+
+.scale{
+    scale: 1;
+}
+
+#avatar-btn{
+        display: flex;
+            align-items: center;
+            justify-content: center;
+            border: none;
+            font-size: 18px;
+            background-color: #0C090D;
+            font-weight: 700;
+            padding: 10px 20px;
+            gap: 10px;
+            border-radius: 10px;
+            cursor: pointer;
+            color: #fff;
+            transition: box-shadow .2s ease-in-out;
+}
+
+#avatar-btn:hover{
+    box-shadow: 1px 0px 10px 3px cyan;
+}
+
+.avatars{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    padding: 20px;
+    background-color: #0C090D;
+    border-radius: 20px;
+    scale: 0;
+    display: none;
+    transition: all .3s ease-in-out;
+}
+
+.active{
+    scale: 1;
+    display: flex;
+}
+
+.first-row,.second-row{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.avatars .avatar{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.avatar:hover{
+    box-shadow: 1px 0px 10px 3px cyan;
+}
+
+#profile-pic{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background-color: #363537;
+}
